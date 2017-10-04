@@ -1,0 +1,170 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* --------------- topo -------------*/
+.faixa_topo {
+  background-color: #4095BA;
+  padding: 17px 14px;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+	.titulo_fl {
+	  color: #fff;
+	  text-transform: capitalize;
+	  font-family: Open Sans;
+	  font-size: 19px;
+	}
+
+
+/* --------------- fim topo -------------*/
+
+
+/* --------------- conteudo index -------------*/
+
+.all_content_index {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 60px;
+}
+	.box1_index {
+	  background-color: #19222A;
+	  width: 20%;
+	  display: block;
+	  position: fixed;
+	  min-height: 222px;
+	}
+	.box2_index {
+	  background-color: #EEEEEE;
+	  width: 80%;
+	  display: block;
+	  min-height: 200px;
+	  margin-left: 20%;
+	  padding-top: 25px;
+	}
+		.box_semestre {
+		  width: 93%;
+		  display: block;
+		  margin: 0 auto;
+		  box-shadow: 0 2px 6px rgba(0, 0, 0, .50);
+		  background-color: #fff;
+		  padding: 11px;
+		  margin-bottom: 25px;
+		}
+			.col_semestre1 {
+			  display: inline-block;
+			  width: 80%;
+			}
+
+				.num_semestre {
+				  color: #2C2F3E;
+				  font-family: Cantarell;
+				  font-size: 15px;
+				  text-transform: uppercase;
+				  padding-bottom: 12px;
+				  font-weight: bold;
+				}
+				.item_disc {
+				  min-width: 242px;
+				  display: inline-block;
+				  margin-left: 8px;
+				  border: 1px solid #cecece;
+				  padding: 7px;
+				  margin-bottom: 7px;
+				  width: 30%;
+				}
+					.infs_topo_disc {
+					    font-family: open sans;
+					    width: 100%;
+					    text-align: right;
+					    font-size: 10px;
+					    text-transform: uppercase;
+					    margin-top: -9px;
+					    font-style: italic;
+					}
+						.infs_topo_disc span {
+						    font-size: 13px;
+						    text-transform: lowercase;
+						}
+					.nome_disc {
+					  font-family: Open Sans;
+					  font-size: 14px;
+					  font-weight: bold;
+					}
+					.subs_disc_list {
+					  margin-top: 9px;
+					  font-family: open sans;
+					  font-size: 11px;
+					  vertical-align: top;
+					  margin-left: 10px;
+					}
+						.subs_disc_list p {
+						  font-weight: bold;
+						}
+						.subs_disc_list span {
+						  display: block;
+						  margin-left: 7px;
+						  line-height: 20p;
+						  margin-bottom: 3px;
+						}
+
+			.col_semestre2 {
+			  display: inline-block;
+			  width: 19%;
+			  padding-top: 34px;
+			  vertical-align: top;
+			}			
+				.selec_disc {
+				  width: 95%;
+				  text-transform: uppercase;
+				  font-family: Cantarell;
+				  font-size: 10px;
+				  margin-left: 4%;
+				  padding: 4px 1%;
+				}
+					.add_disc {
+					  background-color: #1E475B;
+					  color: #fff;
+					  border: none;
+					  width: 96%;
+					  margin-left: 4%;
+					  margin-bottom: 15px;
+					  margin-top: 7px;
+					  border-radius: 5px;
+					  padding: 8px 0;
+					  text-transform: uppercase;
+					  font-family: open sans;
+					  font-size: ;
+					  font-weight: bold;
+					  font-size: 10px;
+					  cursor: pointer;
+					}
+						.add_disc:hover {
+						  transition: .5s;
+						  background-color: #4095BA;
+						}
+
+					
+					.rem_disciplina {
+					  color: #4095BA;
+					  text-align: right;
+					  font-family: open sans;
+					  font-size: 11px;
+					  text-transform: uppercase;
+					  cursor: pointer;
+					}
+						.rem_disciplina:hover {
+						  transition: .5s;
+						  color: #19222A;
+						}
+
+
+
+/* --------------- fim conteudo index -------------*/
