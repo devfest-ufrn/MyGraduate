@@ -33,21 +33,93 @@
   width: 100%;
   position: relative;
   padding-top: 60px;
+  overflow: hidden;
 }
 	.box1_index {
-	  background-color: #19222A;
-	  width: 20%;
-	  display: block;
-	  position: fixed;
-	  min-height: 222px;
+	  	background-color: #19222A;
+	 			overflow-y: scroll;
+	 	width: 21%;
+	  	display: block;
+	  	position: fixed;
+	  	min-height: 222px;
+	  	font-family: open sans;
+	  	height: 100%;
+		padding-top: 16px;
+		padding-left: 1%;
+		padding-right: 1%;
+		color: #fff;
 	}
+
+		.inf_var {
+		  margin-bottom: 23px;
+		  margin-top: 13px;
+		}
+			.inf_var span {
+			  font-size: 11px;
+			  position: relative;
+			  top: -5px;
+			}
+			.inf_var input {
+			  float: right;
+			  width: 115px;
+			  padding-left: 3px;
+			  vertical-align: middle;
+			}
+			.add_semestre {
+			    background-color: #4095BA;
+			    width: 88%;
+			    display: block;
+			    border: 1px solid #4095BA !important;
+			    margin: 0 auto;
+			    margin-top: 0px;
+			    margin-bottom: 0px;
+			    margin-top: 10px;
+			    margin-bottom: -5px;
+			}
+			.add_semestre:hover{
+				background-color: #19222A !important;
+				transition:.5s;
+			}
+
+		.inf_quant {
+		  border-bottom: 1px solid #cecece;
+		  border-top: 1px solid #cecece;
+		  padding-top: 8px;
+		  margin-bottom: 4px;
+		}
+			.inf_p {
+			  font-size: 12px;
+			  margin-bottom: 11px;
+			}
+			.inf_p span {
+			  font-weight: bold;
+			}
+		.inf_quant_hora {
+		  display: block;
+		  border-top: 1px solid #cecece;
+		  border-bottom: 1px solid #cecece;
+		  margin-bottom: 4px;
+		  padding-top: 8px;
+		}
+			.inf_p.inf_p_sub_item {
+			  margin-left: 21px;
+			}
+	.box1_index_scrool{
+		position: absolute;
+		padding-right: 11px;
+		height: 100%;
+	}
+
+
+
 	.box2_index {
 	  background-color: #EEEEEE;
-	  width: 80%;
+	  width: 79%;
 	  display: block;
 	  min-height: 200px;
-	  margin-left: 20%;
+	  margin-left: 22%;
 	  padding-top: 25px;
+	  padding-bottom: 30px;
 	}
 		.box_semestre {
 		  width: 93%;
@@ -72,13 +144,12 @@
 				  font-weight: bold;
 				}
 				.item_disc {
-				  min-width: 242px;
-				  display: inline-block;
-				  margin-left: 8px;
-				  border: 1px solid #cecece;
-				  padding: 7px;
-				  margin-bottom: 7px;
-				  width: 30%;
+					display: inline-block;
+					margin-left: 3px;
+					border: 1px solid #cecece;
+					padding: 7px;
+					margin-bottom: 7px;
+					width: 28%;
 				}
 					.infs_topo_disc {
 					    font-family: open sans;
@@ -129,8 +200,10 @@
 				  margin-left: 4%;
 				  padding: 4px 1%;
 				}
+					.col_semestre2 .add_disc{
+						background-color: #1E475B;
+					}
 					.add_disc {
-					  background-color: #1E475B;
 					  color: #fff;
 					  border: none;
 					  width: 96%;
@@ -164,6 +237,58 @@
 						  transition: .5s;
 						  color: #19222A;
 						}
+
+
+			.item_complementar {
+				  display: block;
+				  padding-left: 7px;
+				  font-family: open sans;
+				  border-bottom: 1px solid #cecece;
+				  border-top: 1px solid #cecece;
+				  padding-top: 15px;
+				  padding-bottom: 13px;
+				  margin-bottom: -1px;
+			}
+				.tipo_complementar {
+					  font-weight: bold;
+					  font-size: 12px;
+					  line-height: 9px;
+				}
+				.nome_complementar {
+				 	 font-size: 12px;
+				}
+				.carga_horaria_evento {
+					  display: block;
+					  font-size: 12px;
+				}
+				.hora_complementar {
+					  width: 88%;
+					  display: block;
+					  margin-left: 4%;
+					  font-size: 11px;
+					  padding: 4px 3%;
+					  margin-top: 11px;
+					  margin-bottom: 14px;
+				}
+					.rem_complementar {
+					  color: #4095BA;
+					  text-align: right;
+					  font-family: open sans;
+					  font-size: 11px;
+					  text-transform: uppercase;
+					  cursor: pointer;
+					  width: 70px;
+				      float: right;
+					  position: relative;
+					  bottom: 9px;
+					  right: 14px;
+					}
+						.rem_complementar:hover {
+						  transition: .5s;
+						  color: #19222A;
+						}
+
+
 
 
 

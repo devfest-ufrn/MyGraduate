@@ -23,15 +23,15 @@
 
     <script type="text/javascript">
     	$(document).ready(function(){
-    		var semestre_html = $(".box_semestre")[0].outerHTML;
-    		for (var i = 0; i < 2; i++) {
-    			$(".box2_index").append( semestre_html );
+    		var semestre_html = $(".box_semestre_repeat")[0].outerHTML;
+    		for (var i = 0; i < 1; i++) {
+    			$(".box_semestre_repeat").after(semestre_html );
     		};
 
-    		var disciplina_html = $(".item_disc")[0].outerHTML;
-    		for (var i = 0; i < 5; i++) {
-    			$(".col_semestre1").append( disciplina_html );
-    		};
+    		// var disciplina_html = $(".item_disc")[0].outerHTML;
+    		// for (var i = 0; i < 5; i++) {
+    		// 	$(".col_semestre1_repeat").append( disciplina_html );
+    		// };
 
 
     	})
@@ -50,15 +50,48 @@
     </header>
 
     <section class="all_content_index">
-    	<div class="box1_index">
+    	<div class="box1_index">  
+            <div class="box1_index_scrool">
+                    <div class="inf_var">
+                        <span>Período letivo inicial: </span><input type="text" placeholder="Ex: 2017.2"><br>
+                        <span>Prorrogações: </span><input type="text" placeholder="0">
+                        <button class="add_disc add_semestre">Adicionar Semestre</button>
 
+                    </div>
+
+                    <div class="inf_quant">
+                        <p class="inf_p">Total de semestres: <span>2</span> </p>
+                        <p class="inf_p">Disciplinas: <span>12</span> </p>
+                        <p class="inf_p">Média de disciplinas por semestre: <span>12</span> </p>
+                        <p class="inf_p">Atividades complementares: <span>12</span> </p>
+                        <p class="inf_p">Expectativa para conclusão: <span>(Carga horária restante deve ser zero)</span> </p>
+                    </div>
+
+                    <div class="inf_quant_hora">
+                        <p class="inf_p">Carga horária obrigatória: <span>2000 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Concluída: <span>300 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Pendente: <span>1700 h</span> </p>
+                    </div>
+
+                    <div class="inf_quant_hora">
+                        <p class="inf_p">Carga horária optativa: <span>300 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Concluída: <span>100 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Pendente: <span>200 h</span> </p>
+                    </div>
+
+                    <div class="inf_quant_hora">
+                        <p class="inf_p">Carga horária total: <span>2300 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Concluída: <span>400 h</span> </p>
+                        <p class="inf_p inf_p_sub_item">Pendente: <span>1900 h</span> </p>
+                    </div>
+            </div>
     	</div>
 
     	<div class="box2_index">
     		
     		<!-- item semestre -->
-    		<div class="box_semestre">
-    			<div class="col_semestre1">
+    		<div class="box_semestre box_semestre_repeat">
+    			<div class="col_semestre1 col_semestre1_repeat">
     				<p class="num_semestre"><span>1°</span> semestre</p>
     				<!-- item disciplina -->
     				<div class="item_disc">
@@ -87,11 +120,159 @@
     						<p>Equivalência:</p>
     						<span>MAT 1 - IMD2342</span>
     					</div>
-
     					<p class="rem_disciplina">remover</p>
     				</div>
     				<!-- fim item disciplina -->
+                    <!-- item disciplina -->
+                    <div class="item_disc">
+                        <p class="infs_topo_disc">obrigatória - <span>90h</span></p>
+                        <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p>
 
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Co requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Equivalência:</p>
+                            <span>MAT 1 - IMD2342</span>
+                        </div>
+                        <p class="rem_disciplina">remover</p>
+                    </div>
+                    <!-- fim item disciplina -->
+                    <!-- item disciplina -->
+                    <div class="item_disc">
+                        <p class="infs_topo_disc">obrigatória - <span>90h</span></p>
+                        <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Co requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Equivalência:</p>
+                            <span>MAT 1 - IMD2342</span>
+                        </div>
+                        <p class="rem_disciplina">remover</p>
+                    </div>
+                    <!-- fim item disciplina -->
+                    <!-- item disciplina -->
+                    <div class="item_disc">
+                        <p class="infs_topo_disc">obrigatória - <span>90h</span></p>
+                        <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Co requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Equivalência:</p>
+                            <span>MAT 1 - IMD2342</span>
+                        </div>
+                        <p class="rem_disciplina">remover</p>
+                    </div>
+                    <!-- fim item disciplina -->
+                    <!-- item disciplina -->
+                    <div class="item_disc">
+                        <p class="infs_topo_disc">obrigatória - <span>90h</span></p>
+                        <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Co requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Equivalência:</p>
+                            <span>MAT 1 - IMD2342</span>
+                        </div>
+                        <p class="rem_disciplina">remover</p>
+                    </div>
+                    <!-- fim item disciplina -->
+                    <!-- item disciplina -->
+                    <div class="item_disc">
+                        <p class="infs_topo_disc">obrigatória - <span>90h</span></p>
+                        <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Co requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Pré requisitos:</p>
+                            <span>Cálculo 1 - IMD00123</span>
+                            <span>FMC 1 - IMD00222</span>
+                        </div>
+
+                        <div class="subs_disc_list">
+                            <p>Equivalência:</p>
+                            <span>MAT 1 - IMD2342</span>
+                        </div>
+                        <p class="rem_disciplina">remover</p>
+                    </div>
+                    <!-- fim item disciplina -->
     			</div>
 
     			<div class="col_semestre2">
@@ -114,12 +295,10 @@
     					<option value="Cálculo 5">FMC 3</option>
     				</select>
     				<button class="add_disc add_disc_optativa">Adicionar</button>
-
     			</div>
     		</div>
     		<!-- fim item semestre -->
     		    		
-    	</div>
 
     	 <!-- item complementar -->
     		<div class="box_semestre box_complementares">
@@ -130,19 +309,21 @@
     					<p class="tipo_complementar">Participação em palastra</p>
     					<span class="nome_complementar">Evento da GDG Natal 2017</span>
     					<span class="carga_horaria_evento">Carga horária: 4h</span>
+                        <p class="rem_complementar">remover</p>
     				</div>
     				<div class="item_complementar">
     					<p class="tipo_complementar">Participação em palastra</p>
     					<span class="nome_complementar">Evento da GDG Natal 2017</span>
     					<span class="carga_horaria_evento">Carga horária: 4h</span>
+                        <p class="rem_complementar">remover</p>
     				</div>
     				<div class="item_complementar">
     					<p class="tipo_complementar">Participação em palastra</p>
     					<span class="nome_complementar">Evento da GDG Natal 2017</span>
     					<span class="carga_horaria_evento">Carga horária: 4h</span>
+                        <p class="rem_complementar">remover</p>
     				</div>
     				<!-- fim item complementar -->
-
     			</div>
     			
     			<div class="col_semestre2">
@@ -163,6 +344,7 @@
     		<!-- fim item complementar -->
     	
 
+        </div>
 
     </section>
 
