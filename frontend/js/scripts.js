@@ -4,17 +4,27 @@
 	//		$(".box_semestre_repeat").after(semestre_html );
 	//	};
 
-	function get_disciplinas(tipo){ 
+	function get_list_disciplinas(tipo){ 
 		// gera a lista de disciplinas disponíveis
 		// tem que testar o tipo, se for 0 gera as obrigatória
 		// se for 1 gera as optativas
+		if(tipo ==1){
+			var lista = '<option value="">Disciplina Optativas</option> '+
+			' 	<option value="Cálculo 1">Cálculo 1</option> '+
+			' 	<option value="Cálculo 2">Cálculo 2</option> '+
+			' 	<option value="Cálculo 3">FMC 1</option> '+
+			' 	<option value="Cálculo 4">FMC 2</option> '+
+			' 	<option value="Cálculo 5">FMC 3</option> ';
 
-		var lista = '<option value="">Disciplina Obrigatória</option> '+
-		' 	<option value="Cálculo 1">Cálculo 1</option> '+
-		' 	<option value="Cálculo 2">Cálculo 2</option> '+
-		' 	<option value="Cálculo 3">FMC 1</option> '+
-		' 	<option value="Cálculo 4">FMC 2</option> '+
-		' 	<option value="Cálculo 5">FMC 3</option> ';
+		}else{
+			var lista = '<option value="">Disciplina Obrigatória</option> '+
+			' 	<option value="Cálculo 1">Cálculo 1</option> '+
+			' 	<option value="Cálculo 2">Cálculo 2</option> '+
+			' 	<option value="Cálculo 3">FMC 1</option> '+
+			' 	<option value="Cálculo 4">FMC 2</option> '+
+			' 	<option value="Cálculo 5">FMC 3</option> ';
+		}
+
 
 		return lista;
 	}
@@ -22,7 +32,7 @@
 	num_semestre = 1
 	function add_semestre(){
 		// função que adicionar um semestre
-		// ela usa a função de get_disciplinas para gerar a lista da laterl de adicionar disciplinas 
+		// ela usa a função de get_list_disciplinas para gerar a lista da lateral de adicionar disciplinas 
 
 
 		var semestre = '	<!-- item semestre --> '+
@@ -35,14 +45,14 @@
     		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
     		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
 	    	' 			<select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
-	    						get_disciplinas(0) +
+	    						get_list_disciplinas(0) +
 	    	' 			</select> '+
 			' 			<button onclick="btn_add_disciplina('+num_semestre+', 0)" class="add_disc add_disc_obrigatoria">Adicionar</button>' +
 	    	'       </form>' +
     		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
     		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
     		' 			<select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
-    							get_disciplinas(1) +
+    							get_list_disciplinas(1) +
     		' 			</select> '+
 			' 			<button onclick="btn_add_disciplina('+num_semestre+', 1)" class="add_disc add_disc_optativa">Adicionar</button>' +
 	    	'       </form>' +
@@ -71,8 +81,8 @@
 
 	function add_disciplina(id_disciplina, id_semestre){
 		// tem que formatar esse html de acordo com o id da disciplina, vai ter o array/json com os dados, tem que ir nesse array e pegar as 
-		// informações da disciplina
-		// 
+		// informações da disciplina.
+
 		       var disciplina = ' <!-- item disciplina --> '+
                '      <div class="item_disc"> '+
                '          <p class="infs_topo_disc">obrigatória - <span>90h</span></p> '+
@@ -94,8 +104,8 @@
                '         <p class="rem_disciplina">remover</p> '+
                '      </div> '+
                '       <!-- fim item disciplina --> ';
-        $("#semestre_num_"+id_semestre+" .aux_add_disciplina").before(disciplina);
 
+        $("#semestre_num_"+id_semestre+" .aux_add_disciplina").before(disciplina);
 	}
 
 
@@ -103,7 +113,7 @@
 		add_semestre();
 	})
 	
-
+	
 	add_semestre();
 	add_semestre();
 	add_semestre();
