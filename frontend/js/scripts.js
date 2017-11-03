@@ -84,7 +84,7 @@
 		// informações da disciplina.
 
 		       var disciplina = ' <!-- item disciplina --> '+
-               '      <div class="item_disc"> '+
+               '      <div id="dis_id_'+id_disciplina+'" class="item_disc"> '+
                '          <p class="infs_topo_disc">obrigatória - <span>90h</span></p> '+
                '          <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p> '+
                '         <div class="subs_disc_list"> '+
@@ -101,17 +101,38 @@
                '             <p>Equivalência:</p> '+
                '             <span>MAT 1 - IMD2342</span> '+
                '         </div> '+
-               '         <p class="rem_disciplina">remover</p> '+
+               '         <p onclick="remove_disciplina('+id_disciplina+')" class="rem_disciplina">remover</p> '+
                '      </div> '+
                '       <!-- fim item disciplina --> ';
 
         $("#semestre_num_"+id_semestre+" .aux_add_disciplina").before(disciplina);
 	}
 
+	function remove_disciplina(id_disciplina){
+		$("#dis_id_"+id_disciplina).css({"opacity":"0"});
+		
+		setTimeout(function() {
+			$("#dis_id_"+id_disciplina).remove();
+		}, 900);
+
+
+	}
+
 
 	$('.add_semestre').click(function(){
 		add_semestre();
+	});
+
+
+	$("#modo_vis_0, #modo_vis_1").change(function(){
+		if($(this).val() == 0){
+			$('.subs_disc_list').css({"max-height":"300px"});
+		}else{
+			$('.subs_disc_list').css({"max-height":"0px"});
+		}
 	})
+
+
 	
 	
 	add_semestre();

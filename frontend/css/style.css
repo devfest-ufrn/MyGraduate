@@ -150,7 +150,13 @@
 					padding: 7px;
 					margin-bottom: 7px;
 					width: 28%;
+					max-height: 500px;
+					opacity: 1;
+					max-width: 500px;
+					overflow: hidden;
+					transition:.6s;
 				}
+			
 					.infs_topo_disc {
 					    font-family: open sans;
 					    width: 100%;
@@ -174,6 +180,9 @@
 					  font-family: open sans;
 					  font-size: 11px;
 					  vertical-align: top;
+					  overflow: hidden;
+					  max-height: 300px;
+					  transition:.5s;
 					  margin-left: 10px;
 					}
 						.subs_disc_list p {
