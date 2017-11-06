@@ -44,18 +44,27 @@
     		' 	<div class="col_semestre2"> '+
     		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
     		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-	    	' 			<select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
+    		'		<table>'+
+    		' 			<tr>'+
+	    	' 			<td><select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
 	    						get_list_disciplinas(0) +
-	    	' 			</select> '+
-			' 			<button onclick="btn_add_disciplina('+num_semestre+', 0)" class="add_disc add_disc_obrigatoria">Adicionar</button>' +
+	    	' 			</select> </td>'+
+			' 			<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 0)" src="img/add.svg" style="width:20px"/></td>' +
+			'			</tr>'+
+			'		</table>'+
 	    	'       </form>' +
     		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
     		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-    		' 			<select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
+			'		<table>'+
+    		' 			<tr>'+
+    		'				<td><select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
     							get_list_disciplinas(1) +
-    		' 			</select> '+
-			' 			<button onclick="btn_add_disciplina('+num_semestre+', 1)" class="add_disc add_disc_optativa">Adicionar</button>' +
-	    	'       </form>' +
+    		' 				</select> </td>'+
+			'				<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 1)" src="img/add.svg" style="width:20px"/></td>'+
+			'			</tr>'+
+			'		</table>'+	    	
+			'       </form>' +
+			
     		' 	</div> '+
     		' </div> '+
     		' <!-- fim item semestre -->';
@@ -123,17 +132,17 @@
 		add_semestre();
 	});
 
-
-	$("#modo_vis_0, #modo_vis_1").change(function(){
-		if($(this).val() == 0){
+	var expandir = true;
+	$("#switchExpandir").change(function(){
+		
+		if(expandir){
 			$('.subs_disc_list').css({"max-height":"300px"});
 		}else{
 			$('.subs_disc_list').css({"max-height":"0px"});
 		}
+		expandir = !expandir;
 	})
 
-
-	
 	
 	add_semestre();
 	add_semestre();
