@@ -159,8 +159,10 @@
 		
 		if(expandir){
 			$('.subs_disc_list').css({"max-height":"300px"});
+			$('.item_disc').css({"min-height": "160px"});
 		}else{
 			$('.subs_disc_list').css({"max-height":"0px"});
+			$('.item_disc').css({"min-height": "60px"});
 		}
 		expandir = !expandir;
 	})
@@ -417,44 +419,18 @@
 		var periodo = 0;
 	  for (var i = 0; i < data.componentes.length; i++) {
 	  		var componente = data.componentes[i];
+	  		console.log(componente.id);
+	  		console.log(componente.nome);
+	  		console.log(componente.ch_total);
 	  		if(componente.semestre_oferta != periodo){
 	  			periodo = componente.semestre_oferta;
 	  			add_semestre();
 	  		}
     		add_disciplina(componente);
 			
-	 /*   
-	  var bands = [];
-	  
-	  $.getJSON("js/curriculo_componente_detalhe.json", function(data) {
-	      bands = data.bands;
-	      
-	      for (i = 0; i < bands.length; i++) {
-	      	console.log(bands[i].nome);
-	        
-	      }
-	      
-	      
-	  });*/
+	 
 	}
 }
 
 	loadCurriculosComponentes();
-	/*add_semestre();
-	add_semestre();
-	add_semestre();
-    
-    add_disciplina(243, 1)
-    add_disciplina(234, 1)
-    add_disciplina(156, 1)
-    add_disciplina(78, 1)
 
-    add_disciplina(543, 2)
-    add_disciplina(443, 2)
-    add_disciplina(523, 2)
-
-    add_disciplina(123, 3)*/
-    
-
-
-// })
