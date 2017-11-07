@@ -9,24 +9,41 @@
 		// tem que testar o tipo, se for 0 gera as obrigatória
 		// se for 1 gera as optativas
 		if(tipo ==1){
-			var lista = '<option value="">Disciplina Optativas</option> '+
-			' 	<option value="Cálculo 1">Cálculo 1</option> '+
-			' 	<option value="Cálculo 2">Cálculo 2</option> '+
-			' 	<option value="Cálculo 3">FMC 1</option> '+
-			' 	<option value="Cálculo 4">FMC 2</option> '+
-			' 	<option value="Cálculo 5">FMC 3</option> ';
-
+			var lista = '<option value="0">Disciplina Optativas</option> ';
+			for (var i = 0; i < data.componentes.length; i++) {
+		  		var componente = data.componentes[i];
+		  		if(componente.semestre_oferta == 0){
+		  			lista += '<option value="'+componente.id+'">'+componente.codigo+'</option> ';
+		  		}
+	    		
+	    	}
+			
 		}else{
-			var lista = '<option value="">Disciplina Obrigatória</option> '+
-			' 	<option value="Cálculo 1">Cálculo 1</option> '+
-			' 	<option value="Cálculo 2">Cálculo 2</option> '+
-			' 	<option value="Cálculo 3">FMC 1</option> '+
-			' 	<option value="Cálculo 4">FMC 2</option> '+
-			' 	<option value="Cálculo 5">FMC 3</option> ';
+			var lista = '<option value="0">Disciplina Obrigatória</option> ';
+			for (var i = 0; i < data.componentes.length; i++) {
+		  		var componente = data.componentes[i];
+		  		if(componente.semestre_oferta != 0){
+		  			lista += '<option value="'+componente.id+'">'+componente.semestre_oferta+'ºS -'+componente.codigo+'</option> ';
+		  		}
+	    		
+	    	}
 		}
 
 
 		return lista;
+	}
+
+	function get_componente_by_id(id_componente){
+		var componente_encontrado = null;
+		for (var i = 0; i < data.componentes.length; i++) {
+	  		var componente = data.componentes[i];
+	  		if(componente.id == id_componente){
+	  			componente_encontrado = componente;
+	  			
+	  		}
+    		
+		}
+		return componente_encontrado;
 	}
 
 	num_semestre = 1
@@ -83,38 +100,43 @@
 		}else{
 			var id_disciplina = $("#select_obrigatoria_"+num_semestre).val();
 		}
-
-		add_disciplina(id_disciplina, num_semestre); // função que adiciona o html da disciplinas 
+		var componente = get_componente_by_id(id_disciplina);
+		add_disciplina(componente, num_semestre); // função que adiciona o html da disciplinas 
 	}
 
 
-	function add_disciplina(id_disciplina, id_semestre){
+	function add_disciplina(componente,semestre){
 		// tem que formatar esse html de acordo com o id da disciplina, vai ter o array/json com os dados, tem que ir nesse array e pegar as 
 		// informações da disciplina.
-
+			if(semestre == null)
+				semestre = componente.semestre_oferta;
 		       var disciplina = ' <!-- item disciplina --> '+
-               '      <div id="dis_id_'+id_disciplina+'" class="item_disc"> '+
-               '          <p class="infs_topo_disc">obrigatória - <span>90h</span></p> '+
-               '          <p class="nome_disc">Fundamentos Matemáticos da Computação - FMC</p> '+
-               '         <div class="subs_disc_list"> '+
-               '               <p>Pré requisitos:</p> '+
-               '               <span>Cálculo 1 - IMD00123</span> '+
-               '              <span>FMC 1 - IMD00222</span> '+
-               '         </div>' +
-               '          <div class="subs_disc_list"> '+
-               '             <p>Pré requisitos:</p> '+
-               '             <span>Cálculo 1 - IMD00123</span> '+
-               '           <span>FMC 1 - IMD00222</span> '+
-               '         </div> '+
-               '         <div class="subs_disc_list"> '+
+               '      <div id="dis_id_'+componente.id+'" class="item_disc"> '+
+               '          <p class="infs_topo_disc">obrigatória - <span>'+componente.ch_total+'h</span></p> '+
+               '          <p class="nome_disc">'+componente.codigo+'</p> ';
+               if (componente.pre_requisito != null) {
+	               disciplina +='<div class="subs_disc_list"> '+
+	               '               <p>Pré requisitos:</p> '+
+	               '               <span>'+componente.pre_requisito+'</span> '+
+	               '         	</div>';
+           		}
+           		if (componente.co_requisito != null) {
+              		disciplina +='<div class="subs_disc_list"> '+
+               '             <p>Co requisitos:</p> '+
+               '             <span>'+componente.co_requisito+'</span> '+
+               '         </div> ';
+           		}
+           		if (componente.equivalencia != null) {
+               		disciplina +='<div class="subs_disc_list"> '+
                '             <p>Equivalência:</p> '+
-               '             <span>MAT 1 - IMD2342</span> '+
-               '         </div> '+
-               '         <p onclick="remove_disciplina('+id_disciplina+')" class="rem_disciplina">remover</p> '+
+               '             <span>'+componente.equivalencia+'</span> '+
+               '         </div> ';
+               	}
+               disciplina +='         <p onclick="remove_disciplina('+componente.id+')" class="rem_disciplina">remover</p> '+
                '      </div> '+
                '       <!-- fim item disciplina --> ';
 
-        $("#semestre_num_"+id_semestre+" .aux_add_disciplina").before(disciplina);
+        $("#semestre_num_"+semestre+" .aux_add_disciplina").before(disciplina);
 	}
 
 	function remove_disciplina(id_disciplina){
@@ -143,8 +165,282 @@
 		expandir = !expandir;
 	})
 
-	
-	add_semestre();
+	var data = {
+		"componentes":[
+	{
+		"id" : 1,
+		"nome" : "PRÁTICAS DE LEITURA E ESCRITA EM PORTUGUÊS I",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0017",
+		"equivalencia" : "( 52657 OU 2051002 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"id" : 2,
+		"nome" : "PRÁTICAS DE LEITURA EM INGLÊS",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0018",
+		"equivalencia" : "( 52782 OU 2051708 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"id" : 3,
+		"nome" : "RESOLUÇÃO DE PROBLEMAS MATEMÁTICOS PARA TI",
+		"ch_total" : 180,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0019",
+		"equivalencia" : "( 52656 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"id" : 4,
+		"nome" : "TECNOLOGIA DA INFORMAÇÃO E SOCIEDADE",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0020",
+		"equivalencia" : "( 52535 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"id" : 5,
+		"nome" : "INTRODUÇÃO ÀS TÉCNICAS DE PROGRAMAÇÃO",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0012",
+		"equivalencia" : "( 2022850 ) OU ( 61131 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"id" : 6,
+		"nome" : "CÁLCULO DIFERENCIAL E INTEGRAL I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0024",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"id" : 7,
+		"nome" : "PRÁTICAS DE LEITURA E ESCRITA EM PORTUGUÊS II",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0027",
+		"equivalencia" : "( 52784 OU 2051700 OU 57603 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55019 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"id" : 8,
+		"nome" : "FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0028",
+		"equivalencia" : "( 52653 OU 2040665 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"id" : 9,
+		"nome" : "VETORES E GEOMETRIA ANALÍTICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0034",
+		"equivalencia" : "( 48581 E 48583 ) OU ( 2051005 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"id" : 10,
+		"nome" : "ESTRUTURA DE DADOS BÁSICAS I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0029",
+		"equivalencia" : "( 2022856 ) OU ( 52778 ) ",
+		"co_requisito" : "( 55024 ) ",
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"id" : 11,
+		"nome" : "LINGUAGEM DE PROGRAMAÇÃO I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0030",
+		"equivalencia" : "( 2022856 ) OU ( 52785 ) ",
+		"co_requisito" : "( 55023 ) ",
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"id" : 12,
+		"nome" : "PROBABILIDADE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0033",
+		"equivalencia" : null,
+		"co_requisito" : "( 55025 ) ",
+		"pre_requisito" : "( 52662 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"id" : 13,
+		"nome" : "FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO II",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0038",
+		"equivalencia" : "( 2040951 OU 52659 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55022 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"id" : 14,
+		"nome" : "ESTRUTURAS DE DADOS BÁSICAS II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0039",
+		"equivalencia" : "( 2022900 ) OU ( 52787 ) ",
+		"co_requisito" : "( 55027 ) ",
+		"pre_requisito" : "( 55023 ) ",
+		"semestre_oferta" : 4
+	},
+	{
+		"id" : 15,
+		"nome" : "LINGUAGEM DE PROGRAMAÇÃO II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0040",
+		"equivalencia" : "( 2022900 ) OU ( 52786 ) ",
+		"co_requisito" : "( 55026 ) ",
+		"pre_requisito" : "( 55024 ) ",
+		"semestre_oferta" : 4
+	},
+	{
+		"id" : 16,
+		"nome" : "PROGRAMAÇÃO EM HARDWARE DE REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0708",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55023 E 55030 E 55028 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 17,
+		"nome" : "PROJETO INTEGRADOR DE REDES I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0709",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 18,
+		"nome" : "GERÊNCIA DE REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0712",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55028 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 19,
+		"nome" : "DESENVOLVIMENTO DE PROJETOS DE REDES DE COMPUTADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0725",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 20,
+		"nome" : "MECÂNICAS E BALANCEAMENTO DE JOGOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0801",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 21,
+		"nome" : "PROJETO DE INOVAÇÃO TECNOLÓGICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0822",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55027 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"id" : 22,
+		"nome" : "TECNOLOGIA DA INFORMAÇÃO NA SAÚDE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0920",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	}
+		]
+
+	}
+
+	function loadCurriculosComponentes() {
+		var periodo = 0;
+	  for (var i = 0; i < data.componentes.length; i++) {
+	  		var componente = data.componentes[i];
+	  		if(componente.semestre_oferta != periodo){
+	  			periodo = componente.semestre_oferta;
+	  			add_semestre();
+	  		}
+    		add_disciplina(componente);
+			
+	 /*   
+	  var bands = [];
+	  
+	  $.getJSON("js/curriculo_componente_detalhe.json", function(data) {
+	      bands = data.bands;
+	      
+	      for (i = 0; i < bands.length; i++) {
+	      	console.log(bands[i].nome);
+	        
+	      }
+	      
+	      
+	  });*/
+	}
+}
+
+	loadCurriculosComponentes();
+	/*add_semestre();
 	add_semestre();
 	add_semestre();
     
@@ -157,8 +453,8 @@
     add_disciplina(443, 2)
     add_disciplina(523, 2)
 
-    add_disciplina(123, 3)
-    add_disciplina(523, 3)
+    add_disciplina(123, 3)*/
+    
 
 
 // })
