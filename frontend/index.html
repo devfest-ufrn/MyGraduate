@@ -46,7 +46,7 @@
                         <span>Detalhar componentes</span><input type="checkbox" value="true" id="switchExpandir" name="modo_vis"> <br>   
                        
                         <span>Período letivo inicial: </span><input type="text" placeholder="Ex: 2017.2"><br>
-                        <span>Prorrogações: </span><input type="text" placeholder="0">
+                        <span>Prorrogações: </span><input type="text" placeholder="0"><br><br>
                         <button class="add_disc add_semestre">Adicionar Semestre</button>
                     </div>
 
@@ -58,22 +58,20 @@
                         <p class="inf_p">Expectativa para conclusão: <span>(Carga horária restante deve ser zero)</span> </p>
                     </div>
 
-                    <div class="inf_quant_hora">
-                        <p class="inf_p">Carga horária obrigatória: <span>2000 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Concluída: <span>300 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Pendente: <span>1700 h</span> </p>
+                    <div class="inf_quant">
+                        <p class="inf_p">Carga horária obrigatória:</p>
+                        <p class="inf_p"><progress max="100" value="80"></progress> <span>1700h/2000h</span> </p>
+                        
                     </div>
 
-                    <div class="inf_quant_hora">
-                        <p class="inf_p">Carga horária optativa: <span>300 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Concluída: <span>100 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Pendente: <span>200 h</span> </p>
+                    <div class="inf_quant">
+                        <p class="inf_p">Carga horária optativa:</p>
+                         <p class="inf_p"><progress max="100" value="80"></progress> <span>200h/300h</span> </p>
                     </div>
 
-                    <div class="inf_quant_hora">
-                        <p class="inf_p">Carga horária total: <span>2300 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Concluída: <span>400 h</span> </p>
-                        <p class="inf_p inf_p_sub_item">Pendente: <span>1900 h</span> </p>
+                    <div class="inf_quant">
+                        <p class="inf_p">Carga horária total:</p>
+                         <p class="inf_p"><progress max="100" value="80"></progress> <span>1900h/2300h</span> </p>
                     </div>
             </div>
     	</div>

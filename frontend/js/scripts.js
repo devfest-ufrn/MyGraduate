@@ -9,7 +9,7 @@
 		// tem que testar o tipo, se for 0 gera as obrigatória
 		// se for 1 gera as optativas
 		if(tipo ==1){
-			var lista = '<option value="0">Disciplina Optativas</option> ';
+			var lista = '<option value="0">Optativas</option> ';
 			for (var i = 0; i < data.componentes.length; i++) {
 		  		var componente = data.componentes[i];
 		  		if(componente.semestre_oferta == 0){
@@ -19,7 +19,7 @@
 	    	}
 			
 		}else{
-			var lista = '<option value="0">Disciplina Obrigatória</option> ';
+			var lista = '<option value="0">Obrigatória</option> ';
 			for (var i = 0; i < data.componentes.length; i++) {
 		  		var componente = data.componentes[i];
 		  		if(componente.semestre_oferta != 0){
@@ -54,38 +54,40 @@
 
 		var semestre = '	<!-- item semestre --> '+
     		' <div id="semestre_num_'+num_semestre+'" class="box_semestre box_semestre_repeat"> '+
+    		
     			' <div class="col_semestre1 col_semestre1_repeat"> '+
     			' 	<p class="num_semestre"><span>'+num_semestre+'°</span> semestre</p> '+
-    			' <div class="aux_add_disciplina"></div> '+
-    		' 	</div> '+
-    		' 	<div class="col_semestre2"> '+
-    		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
-    		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-    		'		<table>'+
-    		' 			<tr>'+
-	    	' 			<td><select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
-	    						get_list_disciplinas(0) +
-	    	' 			</select> </td>'+
-			' 			<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 0)" src="img/add.svg" style="width:20px"/></td>' +
-			'			</tr>'+
-			'		</table>'+
-	    	'       </form>' +
-    		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
-    		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-			'		<table>'+
-    		' 			<tr>'+
-    		'				<td><select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
-    							get_list_disciplinas(1) +
-    		' 				</select> </td>'+
-			'				<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 1)" src="img/add.svg" style="width:20px"/></td>'+
-			'			</tr>'+
-			'		</table>'+	    	
-			'       </form>' +
-			
-    		' 	</div> '+
+    			' <div class=""></div> '+
+    			
+    			'<div  class="aux_add_disciplina item_disc"> '+
+    			'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
+    			'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
+    			'		<table>'+
+    			' 			<tr>'+
+    			' 			<td><select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
+    			get_list_disciplinas(0) +
+    			' 			</select> </td>'+
+    			' 			<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 0)" src="img/add.svg" style="width:20px"/></td>' +
+    			'			</tr>'+
+    			'		</table>'+
+    			'       </form>' +
+    			'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
+    			'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
+    			'		<table>'+
+    			' 			<tr>'+
+    			'				<td><select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
+    			get_list_disciplinas(1) +
+    			' 				</select> </td>'+
+    			'				<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 1)" src="img/add.svg" style="width:20px"/></td>'+
+    			'			</tr>'+
+    			'		</table>'+	    	
+    			'       </form>' +
+    			
+    			' 	</div> '+
+    			
     		' </div> '+
     		' <!-- fim item semestre -->';
-
+			
     		num_semestre = num_semestre+1;
 
     		$('.div_aux_semestre').before(semestre); // adiciona o html
@@ -112,7 +114,7 @@
 				semestre = componente.semestre_oferta;
 		       var disciplina = ' <!-- item disciplina --> '+
                '      <div id="dis_id_'+componente.id+'" class="item_disc"> '+
-               '          <p class="infs_topo_disc">obrigatória - <span>'+componente.ch_total+'h</span></p> '+
+               '          <p class="infs_topo_disc">'+get_descricao_modalidade(componente.tipo_vinculo_componente)+' - <span>'+componente.ch_total+'h</span></p> '+
                '          <p class="nome_disc">'+componente.codigo+'</p> ';
                if (componente.pre_requisito != null) {
 	               disciplina +='<div class="subs_disc_list"> '+
@@ -137,6 +139,15 @@
                '       <!-- fim item disciplina --> ';
 
         $("#semestre_num_"+semestre+" .aux_add_disciplina").before(disciplina);
+	}
+	
+	function get_descricao_modalidade(tipo_vinculo_componente){
+		
+		if(tipo_vinculo_componente == 1)
+			return 'Obrigatoria';
+		if(tipo_vinculo_componente == 2)
+			return 'Optativa';
+	
 	}
 
 	function remove_disciplina(id_disciplina){
