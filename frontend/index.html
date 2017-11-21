@@ -17,10 +17,11 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_modal.css">
 	<link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>	
     <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
     <script src="js/jquery2.js"></script>
-    <script src="js/modal.js"></script>
+    
 
     <script type="text/javascript">
     	
@@ -117,9 +118,8 @@
     					<option value="Cálculo 5">FMC 3</option>
     				</select>
     				<input name="" class="hora_complementar" placeholder="Carga horária*">
-    				<button class="add_disc add_complementar">Adicionar</button>
-
-    				
+    				<button  class="add_disc add_complementar">Adicionar</button>
+					
     			</div>
     		</div>
     		<!-- fim item complementar -->
@@ -132,31 +132,50 @@
 	<footer class="item_efeito_scrool_top">
 	
 	</footer>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">Atualizar valores</h4>
-				</div>
-				<div class="modal-body">
-					<input id="novoValor" type="text" placeholder="Digite o valor">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-					<button id="btAtualizarValor" type="button" class="btn btn-primary"
-						data-dismiss="modal">Atualizar</button>
-				</div>
-			</div>
-		</div>
+	<div id="addDisciplinaModal" class="modal">
+		<form onsubmit="return false" class="modal-content animate" name="formAddDisciplina">
+			<input type="hidden" class="input_num_semestre" name="num_semestre" value="1">
+			<table style="width: 100%">
+				<caption>Adicione uma Disciplina</caption>
+				<tr>
+					<td>Obrigatórias</td>
+					<td>
+						<select name="select_obrigatoria" class="selec_disc selec_disc_obrigatoria">
+							
+						</select>
+					</td>
+					<td>
+						<input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina(1, 0);" src="img/add.svg" style="width: 20px" />
+					</td>
+				</tr>
+			
+				<tr>
+					<td>Optativas</td>
+					<td>
+						<select id="select_optativa" class="selec_disc selec_disc_optativa">
+							
+						</select>
+					</td>
+					<td>
+						<input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina(1, 1);" src="img/add.svg" style="width: 20px" />
+					</td>
+				</tr>
+			</table>
+		</form>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('addDisciplinaModal');
 
-    </body>
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
 
 </html>
