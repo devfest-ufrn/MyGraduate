@@ -130,7 +130,7 @@
 		}
 			.col_semestre1 {
 			  display: inline-block;
-			  width: 80%;
+			  width: 100%;
 			}
 
 				.num_semestre {
@@ -149,13 +149,25 @@
 					margin-bottom: 7px;
 					width: 15%;
 					max-height: 500px;
-					min-height: 160px;
+					min-height: 60px;
 					opacity: 1;
 					max-width: 500px;
 					overflow: hidden;
 					transition:.6s;
 				}
-			
+				.item_disc_nova {
+					display: inline-block;
+					margin-left: 3px;
+					padding: 7px;
+					margin-bottom: 7px;
+					width: 15%;
+					max-height: 500px;
+					min-height: 60px;
+					opacity: 1;
+					max-width: 500px;
+					overflow: hidden;
+					transition:.6s;
+				}
 					.infs_topo_disc {
 					    font-family: open sans;
 					    width: 100%;

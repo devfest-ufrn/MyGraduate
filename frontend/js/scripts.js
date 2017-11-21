@@ -58,35 +58,39 @@
     			' <div class="col_semestre1 col_semestre1_repeat"> '+
     			' 	<p class="num_semestre"><span>'+num_semestre+'°</span> semestre</p> '+
     			' <div class=""></div> '+
+    			'<div  class="aux_add_disciplina item_disc_nova"> '+
+    			'	<input type="image" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" src="img/add.svg" style="width:50px"/>'+
+    			'</div> '+
     			
-    			'<div  class="aux_add_disciplina item_disc"> '+
-    			'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
-    			'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-    			'		<table>'+
-    			' 			<tr>'+
-    			' 			<td><select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
-    			get_list_disciplinas(0) +
-    			' 			</select> </td>'+
-    			' 			<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 0)" src="img/add.svg" style="width:20px"/></td>' +
-    			'			</tr>'+
-    			'		</table>'+
-    			'       </form>' +
-    			'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
-    			'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
-    			'		<table>'+
-    			' 			<tr>'+
-    			'				<td><select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
-    			get_list_disciplinas(1) +
-    			' 				</select> </td>'+
-    			'				<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 1)" src="img/add.svg" style="width:20px"/></td>'+
-    			'			</tr>'+
-    			'		</table>'+	    	
-    			'       </form>' +
-    			
-    			' 	</div> '+
     			
     		' </div> '+
     		' <!-- fim item semestre -->';
+    		var modal = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
+    		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
+    		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
+    		'		<table>'+
+    		' 			<tr>'+
+    		' 			<td><select id="select_obrigatoria_'+num_semestre+'" class="selec_disc selec_disc_obrigatoria"> '+
+    		get_list_disciplinas(0) +
+    		' 			</select> </td>'+
+    		' 			<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 0)" src="img/add.svg" style="width:20px"/></td>' +
+    		'			</tr>'+
+    		'		</table>'+
+    		'       </form>' +
+    		'		<form onsubmit="return false" class="form_submit_add_disciplina" > ' +
+    		'			<input type="hidden" class="input_num_semestre" name="num_semestre" value="'+num_semestre+'" >	'+
+    		'		<table>'+
+    		' 			<tr>'+
+    		'				<td><select id="select_optativa_'+num_semestre+'" class="selec_disc selec_disc_optativa"> '+
+    		get_list_disciplinas(1) +
+    		' 				</select> </td>'+
+    		'				<td><input type="image" onclick="btn_add_disciplina('+num_semestre+', 1)" src="img/add.svg" style="width:20px"/></td>'+
+    		'			</tr>'+
+    		'		</table>'+	    	
+    		'       </form>'+
+    		'</div>';
+    		
+    		
 			
     		num_semestre = num_semestre+1;
 
