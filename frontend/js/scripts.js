@@ -98,7 +98,7 @@
 			if(semestre == null)
 				semestre = componente.semestre_oferta;
 		       var disciplina = ' <!-- item disciplina --> '+
-               '      <div id="dis_id_'+componente.id+'" class="item_disc"> '+
+               '      <div id="dis_id_'+componente.id+'" class="item_disc_'+get_descricao_modalidade(componente.tipo_vinculo_componente)+'"> '+
                '          <p class="infs_topo_disc">'+get_descricao_modalidade(componente.tipo_vinculo_componente)+' - <span>'+componente.ch_total+'h</span></p> '+
                '          <p class="nome_disc">'+componente.codigo+'</p> ';
                if (componente.pre_requisito != null) {

@@ -141,7 +141,7 @@
 				  padding-bottom: 12px;
 				  font-weight: bold;
 				}
-				.item_disc {
+				.item_disc_Obrigatoria {
 					display: inline-block;
 					margin-left: 3px;
 					border: 1px solid #cecece;
@@ -154,13 +154,29 @@
 					max-width: 500px;
 					overflow: hidden;
 					transition:.6s;
+					background-color:#ccffd5; 
+				}
+				.item_disc_Optativa {
+					display: inline-block;
+					margin-left: 3px;
+					border: 1px solid #cecece;
+					padding: 7px;
+					margin-bottom: 7px;
+					width: 15%;
+					max-height: 500px;
+					min-height: 60px;
+					opacity: 1;
+					max-width: 500px;
+					overflow: hidden;
+					transition:.6s;
+					background-color:#9fceff; 
 				}
 				.item_disc_nova {
 					display: inline-block;
 					margin-left: 3px;
 					padding: 7px;
 					margin-bottom: 7px;
-					width: 15%;
+					width: 5%;
 					max-height: 500px;
 					min-height: 60px;
 					opacity: 1;
