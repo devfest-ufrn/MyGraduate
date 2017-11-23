@@ -9,10 +9,15 @@
 		// tem que testar o tipo, se for 0 gera as obrigatória
 		// se for 1 gera as optativas
 		/*Disciplinas optativas*/
-		for (var i = 0; i < data.componentes.length; i++) {
+		var opt = document.createElement("option");
+	    opt.value = 0;
+	    opt.text ="-- SELECIONE --";
+	    document.formAddDisciplina.select_optativa.add(opt, i);
+	    
+		for (var i = 1; i < data.componentes.length; i++) {
 			var componente = data.componentes[i];
 			if(componente.semestre_oferta == 0){
-				//document.formAddDisciplina.select_obrigatoria.options[i] = new Option(componente.id, componente.codigo);
+				
 				 var opt = document.createElement("option");
 				    opt.value = componente.id;
 				    opt.text = componente.codigo + ' - ' + componente.nome;
@@ -23,17 +28,22 @@
 		document.formAddDisciplina.select_optativa.selectedIndex = 0;
 		
 		/*Disciplinas Obrigatorias*/
+		var obr = document.createElement("option");
+		obr.value = 0;
+		obr.text ="-- SELECIONE --";
+		
 		for (var i = 0; i < data.componentes.length; i++) {
 			var componente = data.componentes[i];
 			if(componente.semestre_oferta != 0){
 				//document.formAddDisciplina.select_obrigatoria.options[i] = new Option(componente.id, componente.codigo);
-				 var opt = document.createElement("option");
-				    opt.value = componente.id;
-				    opt.text = componente.codigo + ' - ' + componente.nome;
-				    document.formAddDisciplina.select_obrigatoria.add(opt, i);
+				var opt = document.createElement("option");
+				opt.value = componente.id;
+				opt.text = componente.codigo + ' - ' + componente.nome;
+				document.formAddDisciplina.select_obrigatoria.add(opt, i);
 			}
 			
 		}
+		document.formAddDisciplina.select_obrigatoria.add(obr, 0);
 		document.formAddDisciplina.select_obrigatoria.selectedIndex = 0;
 	}
 
@@ -87,12 +97,32 @@
 			var id_disciplina = document.formAddDisciplina.select_obrigatoria.options[document.formAddDisciplina.select_obrigatoria.selectedIndex].value;
 			
 		}
+		if(id_disciplina == 0)
+			alert("Selecione uma disciplina para adicionar ao semestre!");
 		var componente = get_componente_by_id(id_disciplina);
-		add_disciplina(componente, semestre_selecionado); // função que adiciona o html da disciplinas 
+		if(disciplina_ja_existe(componente,semestre_selecionado))
+			alert("Disciplina já existe neste período!");
+		else{
+			add_disciplina(componente, semestre_selecionado); // função que adiciona o html da disciplinas
+			semestres_curso[semestre_selecionado-1].push(componente)
+		}
+		document.formAddDisciplina.select_optativa.selectedIndex = 0;
+		document.formAddDisciplina.select_obrigatoria.selectedIndex = 0;
+	}
+	
+	function disciplina_ja_existe(componente,semestre){
+		var existe = false;
+		for(i=0;i<semestres_curso[semestre-1].length;i++){
+			if(semestres_curso[semestre-1][i].id == componente.id){
+				existe = true;
+				break;
+			}
+		}
+		return existe;
 	}
 
-
 	function add_disciplina(componente,semestre){
+		
 		// tem que formatar esse html de acordo com o id da disciplina, vai ter o array/json com os dados, tem que ir nesse array e pegar as 
 		// informações da disciplina.
 			if(semestre == null)
@@ -100,7 +130,8 @@
 		       var disciplina = ' <!-- item disciplina --> '+
                '      <div id="dis_id_'+componente.id+'" class="item_disc_'+get_descricao_modalidade(componente.tipo_vinculo_componente)+'"> '+
                '          <p class="infs_topo_disc">'+get_descricao_modalidade(componente.tipo_vinculo_componente)+' - <span>'+componente.ch_total+'h</span></p> '+
-               '          <p class="nome_disc">'+componente.codigo+'</p> ';
+               '          <p class="nome_disc">'+componente.codigo+'</p> '+
+		       '          <p class="subs_disc_list">'+componente.nome+'</p> ';
                if (componente.pre_requisito != null) {
 	               disciplina +='<div class="subs_disc_list"> '+
 	               '               <p>Pré requisitos:</p> '+
@@ -410,21 +441,29 @@
 		]
 
 	}
-
+	var semestres_curso = [];
 	function loadCurriculosComponentes() {
 		var periodo = 0;
+		var semestre = [];
+		
 	  for (var i = 0; i < data.componentes.length; i++) {
 	  		var componente = data.componentes[i];
-	  		/*console.log(componente.id);
-	  		console.log(componente.nome);
-	  		console.log(componente.ch_total);*/
 	  		if(componente.semestre_oferta != periodo){
 	  			periodo = componente.semestre_oferta;
-	  			add_semestre();
+	  			if(semestre.length > 0)
+	  				semestres_curso.push(semestre);
+				semestre = new Array();
+	  			if(componente.semestre_oferta != 0)
+	  				add_semestre();
 	  		}
     		add_disciplina(componente);
+    		semestre.push(componente);
+		
 	  }
+	  semestres_curso.push(semestre);
 	  carregar_lista_disciplinas();
+	  
+	  
 	}
 
 	loadCurriculosComponentes();
