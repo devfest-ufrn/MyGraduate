@@ -71,11 +71,13 @@
     		
     			' <div class="col_semestre1 col_semestre1_repeat"> '+
     			' 	<p class="num_semestre"><span>'+num_semestre+'°</span> semestre</p> '+
-    			' <div class=""></div> '+
-    			'<div  class="aux_add_disciplina item_disc_nova"> '+
-    			'	<input type="image" onclick="semestre_selecionado='+num_semestre+';document.getElementById(\'addDisciplinaModal\').style.display=\'block\'" '+
-    			'		src="img/add.svg" style="width:50px"/>'+
-    			'</div> '+    			
+    			'</div> '+
+    			' <div class="col_semestre2"> '+
+	    		'	<div  class="aux_add_disciplina item_disc_nova"> '+
+	    		'		<input type="image" onclick="semestre_selecionado='+num_semestre+';document.getElementById(\'addDisciplinaModal\').style.display=\'block\'" '+
+	    		'			src="img/add.svg"/>'+
+	    		' 	</div> '+    		
+	    		'</div> '+	
     		' </div> '+
     		' <!-- fim item semestre -->';
 	
@@ -128,7 +130,7 @@
 			if(semestre == null)
 				semestre = componente.semestre_oferta;
 		       var disciplina = ' <!-- item disciplina --> '+
-               '      <div id="dis_id_'+componente.id+'" class="item_disc_'+get_descricao_modalidade(componente.tipo_vinculo_componente)+'"> '+
+               '      <div id="dis_id_'+componente.id+'" class="item_disc item_disc_'+get_descricao_modalidade(componente.tipo_vinculo_componente)+'"> '+
                '          <p class="infs_topo_disc">'+get_descricao_modalidade(componente.tipo_vinculo_componente)+' - <span>'+componente.ch_total+'h</span></p> '+
                '          <p class="nome_disc">'+componente.codigo+'</p> '+
 		       '          <p class="subs_disc_list">'+componente.nome+'</p> ';
@@ -154,7 +156,7 @@
                '      </div> '+
                '       <!-- fim item disciplina --> ';
 
-        $("#semestre_num_"+semestre+" .aux_add_disciplina").before(disciplina);
+        $("#semestre_num_"+semestre+" .col_semestre1").append(disciplina);
 	}
 	
 	function get_descricao_modalidade(tipo_vinculo_componente){
@@ -186,13 +188,29 @@
 		
 		if(expandir){
 			$('.subs_disc_list').css({"max-height":"300px"});
-			$('.item_disc').css({"min-height": "160px"});
+			$('.item_disc').css({"min-height": "180px"});
 		}else{
 			$('.subs_disc_list').css({"max-height":"0px"});
 			$('.item_disc').css({"min-height": "60px"});
 		}
 		expandir = !expandir;
-	})
+	});
+
+	var expandir2 = true;
+	$("#menu_mobile_ico").change(function(){
+		
+		if(expandir2){
+			$('.box1_index').css({"max-height":"1500px"});
+			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(90deg)", "-webkit-transform":"rotate(90deg)", "transform":"rotate(90deg)"});
+			
+		}else{
+			$('.box1_index').css({"max-height":"0px"});
+			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(0deg)", "-webkit-transform":"rotate(0deg)", "transform":"rotate(0deg)"});
+		}
+		expandir2 = !expandir2;
+	});
+
+
 
 	var data = {
 		"componentes":[
