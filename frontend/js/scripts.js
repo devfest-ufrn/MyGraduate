@@ -71,13 +71,13 @@
     		
     			' <div class="col_semestre1 col_semestre1_repeat"> '+
     			' 	<p class="num_semestre"><span>'+num_semestre+'°</span> semestre</p> '+
-    			'</div> '+
-    			' <div class="col_semestre2"> '+
-	    		'	<div  class="aux_add_disciplina item_disc_nova"> '+
-	    		'		<input type="image" onclick="semestre_selecionado='+num_semestre+';document.getElementById(\'addDisciplinaModal\').style.display=\'block\'" '+
-	    		'			src="img/add.svg"/>'+
-	    		' 	</div> '+    		
-	    		'</div> '+	
+    		'</div> '+
+     			' <div class="col_semestre2"> '+
+ 	    		'	<div  class="aux_add_disciplina item_disc_nova"> '+
+ 	    		'		<input type="image" onclick="semestre_selecionado='+num_semestre+';document.getElementById(\'addDisciplinaModal\').style.display=\'block\'" '+
+ 	    		'			src="img/add.svg"/>'+
+ 	    		' 	</div> '+    		
+ 	    		'</div> '+   			
     		' </div> '+
     		' <!-- fim item semestre -->';
 	
@@ -194,23 +194,21 @@
 			$('.item_disc').css({"min-height": "60px"});
 		}
 		expandir = !expandir;
-	});
+	})
 
 	var expandir2 = true;
-	$("#menu_mobile_ico").change(function(){
-		
-		if(expandir2){
-			$('.box1_index').css({"max-height":"1500px"});
-			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(90deg)", "-webkit-transform":"rotate(90deg)", "transform":"rotate(90deg)"});
-			
-		}else{
-			$('.box1_index').css({"max-height":"0px"});
-			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(0deg)", "-webkit-transform":"rotate(0deg)", "transform":"rotate(0deg)"});
-		}
-		expandir2 = !expandir2;
-	});
-
-
+ 	$("#menu_mobile_ico").change(function(){
+ 		
+ 		if(expandir2){
+ 			$('.box1_index').css({"max-height":"1500px"});
+ 			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(90deg)", "-webkit-transform":"rotate(90deg)", "transform":"rotate(90deg)"});
+ 			
+ 		}else{
+ 			$('.box1_index').css({"max-height":"0px"});
+ 			$('.bars_menu_mobile i').css({"-ms-transform":"rotate(0deg)", "-webkit-transform":"rotate(0deg)", "transform":"rotate(0deg)"});
+ 		}
+ 		expandir2 = !expandir2;
+ 	});
 
 	var data = {
 		"componentes":[
@@ -482,6 +480,16 @@
 	  carregar_lista_disciplinas();
 	  
 	  
+	}
+
+	// Get the modal
+	var modal = document.getElementById('addDisciplinaModal');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
 	}
 
 	loadCurriculosComponentes();
