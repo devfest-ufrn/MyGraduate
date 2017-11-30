@@ -52,7 +52,7 @@ function carregar_turmas(){
 	  },
 	  url: url_base+"curso/v0.1/cursos?nivel=G&limit=20&offset=20",
 	  success: function(msg) {
-	    console.log("The result =" + msg);
+	    console.log("The XXX =" + msg);
 	  }
 	});
 	
