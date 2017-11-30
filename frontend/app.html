@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
 
 
     <link rel="stylesheet" type="text/css" href="plugin/font-awesome-4.6.3/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style_modal.css">
-	<link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>	
+    <link rel="icon" href="img/fav_icon.png" type="image/x-icon"/>  
     <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
     <script src="js/jquery2.js"></script>
     <script>
@@ -33,19 +33,19 @@
 <body>
 
     <header>
-       	<div class="faixa_topo">
-       		<p class="titulo_fl">grade curricular iterativa</p>
+        <div class="faixa_topo">
+            <p class="titulo_fl">grade curricular iterativa</p>
             <!-- <button type="button" onclick="Mudarestado('div_principal')">Mostrar / Esconder</button> -->
              <label for="menu_mobile_ico" class="bars_menu_mobile">
                  <i class="fa fa-bars" aria-hidden="true"></i>
              </label>
              <input type="checkbox" value="true" id="menu_mobile_ico" class="check_menu_mobile">
-       	</div>
+        </div>
 
     </header>
 
     <section class="all_content_index" >
-    	<div class="box1_index">  
+        <div class="box1_index">  
             <div class="box1_index_scrool" id="barra_lateral">
 
                     <div class="inf_var">
@@ -80,93 +80,93 @@
                          <p class="inf_p"><progress max="100" value="80"></progress> <span>1900h/2300h</span> </p>
                     </div>
             </div>
-    	</div>
+        </div>
 
-    	<div class="box2_index" id="div_principal">
-    		
+        <div class="box2_index" id="div_principal">
+            
             <div class="div_aux_semestre"></div>
-    		<button class="add_disc add_semestre add_semestre_mobile">Adicionar Semestre</button> 		
+            <button class="add_disc add_semestre add_semestre_mobile">Adicionar Semestre</button>       
 
-    	 <!-- item complementar -->
-    		<div class="box_semestre box_complementares">
-    			<div class="col_semestre1_com">
-    				<p class="num_semestre">Atividades Complementares</p>
-    				<!-- item complementar -->
-    				<div class="item_complementar">
-    					<p class="tipo_complementar">Participação em palastra</p>
-    					<span class="nome_complementar">Evento da GDG Natal 2017</span>
-    					<span class="carga_horaria_evento">Carga horária: 4h</span>
+         <!-- item complementar -->
+            <div class="box_semestre box_complementares">
+                <div class="col_semestre1_com">
+                    <p class="num_semestre">Atividades Complementares</p>
+                    <!-- item complementar -->
+                    <div class="item_complementar">
+                        <p class="tipo_complementar">Participação em palastra</p>
+                        <span class="nome_complementar">Evento da GDG Natal 2017</span>
+                        <span class="carga_horaria_evento">Carga horária: 4h</span>
                         <p class="rem_complementar">remover</p>
-    				</div>
-    				<div class="item_complementar">
-    					<p class="tipo_complementar">Participação em palastra</p>
-    					<span class="nome_complementar">Evento da GDG Natal 2017</span>
-    					<span class="carga_horaria_evento">Carga horária: 4h</span>
+                    </div>
+                    <div class="item_complementar">
+                        <p class="tipo_complementar">Participação em palastra</p>
+                        <span class="nome_complementar">Evento da GDG Natal 2017</span>
+                        <span class="carga_horaria_evento">Carga horária: 4h</span>
                         <p class="rem_complementar">remover</p>
-    				</div>
-    				<div class="item_complementar">
-    					<p class="tipo_complementar">Participação em palastra</p>
-    					<span class="nome_complementar">Evento da GDG Natal 2017</span>
-    					<span class="carga_horaria_evento">Carga horária: 4h</span>
+                    </div>
+                    <div class="item_complementar">
+                        <p class="tipo_complementar">Participação em palastra</p>
+                        <span class="nome_complementar">Evento da GDG Natal 2017</span>
+                        <span class="carga_horaria_evento">Carga horária: 4h</span>
                         <p class="rem_complementar">remover</p>
-    				</div>
-    				<!-- fim item complementar -->
-    			</div>
-    			
-    		<div class="col_semestre2_com">
+                    </div>
+                    <!-- fim item complementar -->
+                </div>
+                
+            <div class="col_semestre2_com">
                    <input name="" class="hora_complementar" placeholder="Atividade complementar*">
                      
-    				<input name="" class="hora_complementar" placeholder="Carga horária*">
-    				<button  class="add_disc add_complementar">Adicionar</button>
-					
-    			</div>
-    		</div>
-    		<!-- fim item complementar -->
-    	
+                    <input name="" class="hora_complementar" placeholder="Carga horária*">
+                    <button  class="add_disc add_complementar">Adicionar</button>
+                    
+                </div>
+            </div>
+            <!-- fim item complementar -->
+        
 
         </div>
 
     </section>
 
-	<footer class="item_efeito_scrool_top">
-	
-	</footer>
-	<div id="addDisciplinaModal" class="modal">
-		<form onsubmit="return false" class="modal-content animate" name="formAddDisciplina">
-			<input type="hidden" class="input_num_semestre" name="num_semestre" value="1">
-			<table style="width: 100%">
-				<caption>Adicione uma Disciplina</caption>
-				<tr>
-					<td>Obrigatórias</td>
-					<td>
-						<select name="select_obrigatoria" class="selec_disc selec_disc_obrigatoria">
-							
-						</select>
-					</td>
-					<td>
-						<input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina( 0);" src="img/add.svg" style="width: 20px" />
-					</td>
-				</tr>
-			
-				<tr>
-					<td>Optativas</td>
-					<td>
-						<select id="select_optativa" class="selec_disc selec_disc_optativa">
-							
-						</select>
-					</td>
-					<td>
-						<input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina(1);" src="img/add.svg" style="width: 20px" />
-					</td>
-				</tr>
-			</table>
-		</form>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <footer class="item_efeito_scrool_top">
+    
+    </footer>
+    <div id="addDisciplinaModal" class="modal">
+        <form onsubmit="return false" class="modal-content animate" name="formAddDisciplina">
+            <input type="hidden" class="input_num_semestre" name="num_semestre" value="1">
+            <table style="width: 100%">
+                <caption>Adicione uma Disciplina</caption>
+                <tr>
+                    <td>Obrigatórias</td>
+                    <td>
+                        <select name="select_obrigatoria" class="selec_disc selec_disc_obrigatoria">
+                            
+                        </select>
+                    </td>
+                    <td>
+                        <input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina( 0);" src="img/add.svg" style="width: 20px" />
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>Optativas</td>
+                    <td>
+                        <select id="select_optativa" class="selec_disc selec_disc_optativa">
+                            
+                        </select>
+                    </td>
+                    <td>
+                        <input type="image" onclick="document.getElementById('addDisciplinaModal').style.display='none';btn_add_disciplina(1);" src="img/add.svg" style="width: 20px" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/client-api.js"></script>
-	<script>
-	</script>
+    <script>
+    </script>
 </body>
 
 </html>

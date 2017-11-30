@@ -1,6 +1,7 @@
 var token_type ='to';
 var access_token = 'ac';
 var codeDiscente = '';
+var cursos ;
 
 var AuthorizationPtoken  = '';
 getCodeLoginURL();
@@ -30,16 +31,16 @@ ajax.onreadystatechange = function() {
 			token_type = json.token_type;
 			AuthorizationPtoken  = token_type + " " + access_token;
 
-		carregar_turmas();
+	 carregar_cursos();
 		}
 }
 
 
 
 
-function carregar_turmas(){
+function carregar_cursos(){
 	var ajax = new XMLHttpRequest();
-	var urlGET = url_base+"curso/v0.1/cursos?nivel=G&limit=20&offset=20";	
+	var urlGET = url_base+"curso/v0.1/cursos?nivel=G&limit=2&offset=20";	
 	ajax.open("GET", urlGET, true);
 	ajax.setRequestHeader("Authorization",AuthorizationPtoken);
 	ajax.setRequestHeader("x-api-key", "ArUQKho0i6QWlP6xCQGDCw6G4TfogmYLi6iiq3Jp");
@@ -50,9 +51,13 @@ function carregar_turmas(){
 	    request.setRequestHeader("Authorization",AuthorizationPtoken );
 	    request.setRequestHeader("x-api-key", "ArUQKho0i6QWlP6xCQGDCw6G4TfogmYLi6iiq3Jp");
 	  },
-	  url: url_base+"curso/v0.1/cursos?nivel=G&limit=20&offset=20",
+	  url: url_base+"curso/v0.1/discente?nome=joab&limit=2&offset=20",
 	  success: function(msg) {
-	    console.log("The XXX =" + msg);
+	  	cursos = msg;
+	  	for(var i=0;i<2;i++){
+	  		var json = jQuery.parseJSON(JSON.stringify(msg[i]));
+			console.log(json.curso);
+		}
 	  }
 	});
 	
@@ -81,6 +86,6 @@ function logar(){
 	// Seta paramêtros da requisição e envia a requisição
 	ajax.send();
 }
-
 logar();
+
 
