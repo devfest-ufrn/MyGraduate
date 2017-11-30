@@ -51,7 +51,7 @@ function carregar_cursos(){
 	    request.setRequestHeader("Authorization",AuthorizationPtoken );
 	    request.setRequestHeader("x-api-key", "ArUQKho0i6QWlP6xCQGDCw6G4TfogmYLi6iiq3Jp");
 	  },
-	  url: url_base+"curso/v0.1/discente?nome=joab&limit=2&offset=20",
+	  url: url_base+"curso/v0.1/cursos?nivel=G&limit=2&offset=20",
 	  success: function(msg) {
 	  	cursos = msg;
 	  	for(var i=0;i<2;i++){
@@ -87,5 +87,4 @@ function logar(){
 	ajax.send();
 }
 logar();
-
 
