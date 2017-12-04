@@ -39,7 +39,7 @@
 }
 	.box1_index {
 	  	background-color: #19222A;
-	 			overflow-y: scroll;
+	 	overflow-y: scroll;
 	 	width: 21%;
 	  	display: block;
 	  	position: fixed;
@@ -50,7 +50,60 @@
 		padding-left: 1%;
 		padding-right: 1%;
 		color: #fff;
+		transition:.5s;
 	}
+
+		#check_hide_lat {
+		  display: none;
+		}
+		.label_hide_menu {
+		  	position: relative;
+			margin-bottom: 0px;
+			display: block;
+			z-index: 99999999999999;
+			color: #cecece;
+			font-size: 21px;
+			top: -15px;
+			cursor: pointer;
+			transition: .5s;
+			width: 21px;
+			height: 21px;
+			text-align: center;
+		}
+		
+			#check_hide_lat:checked + .label_hide_menu .fa {
+			    -ms-transform: rotate(180deg);
+			    -webkit-transform: rotate(180deg);
+			    transform: rotate(180deg);
+			    color: #4095BA;
+			}
+			.label_hide_menu .fa.fa-caret-square-o-right {
+			    width: 21px;
+			    height: 21px;
+			    overflow: hidden;
+			    vertical-align: bottom;
+			    transition: .5s;
+			}
+
+			.box1_index_hide {
+			    background-color: #EEEEEE !important;
+			    overflow: hidden !important;
+			    width: 10px;
+			    transition:.5s;
+			}
+			.box1_index_scrool_hide {
+			    width: 0px !important;
+			    overflow: hidden !important;
+			    padding: 0 !important;
+			    transition:.0s !important;
+			}
+			.box2_index_hide {
+			    width: 98.5% !important;
+				margin-left: 10px !important;
+				transition: .5s !important;
+				padding-right: 2% !important;
+			}
+
 
 		.inf_var {
 		  margin-bottom: 23px;
@@ -112,6 +165,7 @@
 		position: absolute;
 		padding-right: 11px;
 		height: 110%;
+		transition:.5s;
 	}
 
 
@@ -124,6 +178,7 @@
 	  margin-left: 22%;
 	  padding-top: 25px;
 	  padding-bottom: 30px;
+	  transition:.5s;
 	}
 		.box_semestre {
 		  width: 93%;
@@ -163,6 +218,7 @@
 					max-width: 500px;
 					overflow: hidden;
 					transition:.6s;
+					max-width: 160px;
 					background-color:#ccffd5; 
 				}
 				/*.item_disc_Optativa {
@@ -444,6 +500,9 @@
 
 
 @media(max-width: 980px){
+	.label_hide_menu{
+		display: none;
+	}
 	.col_semestre1_com {
 	    width: 100%;
 	}

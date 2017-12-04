@@ -210,6 +210,26 @@
  		expandir2 = !expandir2;
  	});
 
+
+
+	var expandir3 = true;
+ 	$("#check_hide_lat").change(function(){
+ 		
+ 		if(expandir3){
+ 			$('.box1_index').addClass("box1_index_hide");
+ 			$('.box1_index_scrool').addClass("box1_index_scrool_hide");
+ 			$('.box2_index').addClass("box2_index_hide");
+ 			
+ 		}else{
+ 			$('.box1_index').removeClass("box1_index_hide");
+ 			$('.box1_index_scrool').removeClass("box1_index_scrool_hide");
+ 			$('.box2_index').removeClass("box2_index_hide");
+ 		}
+ 		expandir3 = !expandir3;
+ 	});
+
+
+
 	var data = {
 		"componentes":[
 	{
