@@ -25,8 +25,8 @@ function carregar_turmas(){
 	    request.setRequestHeader("x-api-key", "ArUQKho0i6QWlP6xCQGDCw6G4TfogmYLi6iiq3Jp");
 	  },
 	  url: url_base+"curso/v0.1/cursos?nivel=G&limit=20&offset=20",
-	  success: function(msg) {
-	    console.log("The result =" + msg);
+	  success: function(data) {
+	    console.log("The result =" + data[1].nivel);
 	  }
 	});
 	
