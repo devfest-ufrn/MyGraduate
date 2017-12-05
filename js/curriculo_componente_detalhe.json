@@ -1,0 +1,2182 @@
+﻿"curriculo_componente_detalhe": [
+	{
+		"nome" : "TÉCNICAS DE ILUSTRAÇÃO E STORYBOARD",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DAT0261",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "EVOLUÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DBG0048",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0532",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE III",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0533",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE IV",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0534",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE V",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0535",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE VI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0536",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE VII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0537",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE VIII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0538",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE IX",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0539",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE X",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0540",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "BANCO DE DADOS",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0541",
+		"equivalencia" : "( 21782 E 25934 ) OU ( 2054909 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55024 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ENGENHARIA DE LINGUAGENS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0548",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55026 E 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GRAFOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0549",
+		"equivalencia" : "( 21786 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55026 ) OU ( 46682 E 46688 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MÉTODOS EXPERIMENTAIS EM ENGENHARIA DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0550",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52664 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0600",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO III",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0601",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55025 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO E ANÁLISE DE ALGORITMOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0605",
+		"equivalencia" : "( 21785 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52866 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LINGUAGENS FORMAIS E AUTÔMATOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0606",
+		"equivalencia" : "( 21759 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52972 ) OU ( 25701 ) OU ( 25266 ) OU ( 25685 ) OU ( 40106 ) OU ( 2040951 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LÓGICA COMPUTACIONAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0610",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52972 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "COMPILADORES",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0611",
+		"equivalencia" : "( 21795 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 21783 E 52974 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTELIGENCIA ARTIFICIAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0613",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52972 E 23553 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ESTATISTICA APLICADA A ENGENHARIA I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "EST0323",
+		"equivalencia" : "( 23548 ) OU ( 23556 ) OU ( 23549 ) OU ( 23555 ) OU ( 2036562 ) OU ( 2051702 ) OU ( 23496 ) OU ( 23589 E 48286 E 48287 ) OU ( 23589 E 22735 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 25706 ) OU ( 20027 ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MECANICA CLASSICA",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "FIS0311",
+		"equivalencia" : "( 25571 E 22841 ) OU ( 23461 ) OU ( 25575 ) OU ( 25577 ) OU ( 48586 ) OU ( 57592 ) ",
+		"co_requisito" : "( ( 2049600 ) OU ( 25706 ) OU ( 25703 ) OU ( 23490 ) OU ( 25690 ) OU ( 24535 ) OU ( 25691 ) OU ( 2036555 ) ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ONDAS E FISICA MODERNA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "FIS0313",
+		"equivalencia" : "( 22862 ) OU ( 22922 ) OU ( 22932 E 22937 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( ( 25706 ) E ( 25561 ) E ( 22912 ) ) OU ( 25577 E ( 24535 OU 25703 ) OU ( 23465 ) OU ( 25561 ) OU ( 25706 ) ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LÍNGUA BRASILEIRA DE SINAIS - LIBRAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "FPE0087",
+		"equivalencia" : "( 27266 OU 45840 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "HISTORIA INDIGENA NO BRASIL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "HIS0037",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS DE BIOINFORMÁTICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "ICE1024",
+		"equivalencia" : "( ( 2052802 ) E ( 21044 ) E ( 21701 ) ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "CIRCUITOS LÓGICOS",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0011",
+		"equivalencia" : "( 2022853 ) OU ( 25466 E 25465 ) OU ( 46636 ) OU ( 25259 ) OU ( 25467 E 25468 ) ",
+		"co_requisito" : "( 52650 ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTRODUÇÃO A ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0041",
+		"equivalencia" : "( 52658 OU 22433 OU 21771 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTRODUÇÃO A SISTEMAS OPERACIONAIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0042",
+		"equivalencia" : "( 52666 OU 55326 OU 21789 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55029 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "REDES DE COMPUTADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0043",
+		"equivalencia" : "( 21790 OU 52663 ) OU ( 40117 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52658 OU 55029 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PRÁTICAS DE LEITURA E ESCRITA EM INGLÊS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0044",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55020 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0100",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0101",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO III",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0102",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO IV",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0103",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO V",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0104",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO VI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0105",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO VII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0106",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO VIII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0107",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO IX",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0108",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO X",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0109",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM TECNOLOGIA DA INFORMAÇÃO XI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0110",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO FUNCIONAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0211",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "A"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0230",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "B"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0231",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "C"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0232",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "D"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0233",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "E"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0234",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "F"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0235",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS EMBARCADOS "G"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0236",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "A"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0240",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "B"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0241",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "C"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0242",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "D"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0243",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "E"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0244",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "F"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0245",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM SISTEMAS DE INFORMAÇÃO DE GESTÃO "G"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0246",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "A"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0250",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "B"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0251",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "C"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0252",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "D"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0253",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "E"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0254",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "F"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0255",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL "G"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0256",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "A"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0260",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "B"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0261",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "C"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0262",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "D"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0263",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "E"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0264",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "F"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0265",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM BIOINFORMÁTICA "G"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0266",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "A"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0270",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "B"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0271",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "C"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0272",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "D"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0273",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "E"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0274",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "F"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0275",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM REDES DE COMPUTADORES "G"",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0276",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SISTEMAS EMBARCADOS DE TEMPO REAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0308",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52666 OU 55030 ) E ( 55037 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INSTRUMENTAÇÃO ELETROELETRÔNICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0309",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55040 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TEORIA DE CIRCUITOS ELÉTRICOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0319",
+		"equivalencia" : "( 40109 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52662 OU 48582 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "CIRCUITOS ELETRÔNICOS",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0320",
+		"equivalencia" : "( 46638 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55036 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETOS BASEADOS EM MICROCONTROLADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0321",
+		"equivalencia" : "( 22431 ) ",
+		"co_requisito" : "( 52658 OU 55029 ) ",
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SISTEMAS DIGITAIS RECONFIGURÁVEIS",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0322",
+		"equivalencia" : "( 40123 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52536 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "METODOLOGIAS DE PROJETOS EM SISTEMAS EMBARCADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0323",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO INTEGRADO I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0324",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTRODUÇÃO A SISTEMAS DE CONTROLE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0325",
+		"equivalencia" : "( 40107 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52665 ) OU ( 55036 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROCESSAMENTO DIGITAL DE SINAIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0326",
+		"equivalencia" : "( 21086 OU 23570 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52665 ) E ( 55036 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO INTEGRADO II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0327",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55094 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÉCNICAS DE PROTOTIPAÇÃO E MONTAGEM DE CIRCUITOS E SISTEMAS ELETRÔNICOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0328",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO INTEGRADO III",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0329",
+		"equivalencia" : null,
+		"co_requisito" : "( 52672 E 55043 ) ",
+		"pre_requisito" : "( 55095 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "REDES DE COMUNICAÇÃO EM SISTEMAS EMBARCADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0330",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55028 E 52536 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO EM PLATAFORMAS EMBARCADAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0331",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ARQUITETURAS AVANÇADAS DE COMPUTADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0332",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52658 OU 55029 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO DE SOFTWARE E TESTES EM SISTEMAS EMBARCADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0333",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55037 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SENSORES INTELIGENTES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0334",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55042 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0335",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0336",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TI VERDE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0337",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "BANCO DE DADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0401",
+		"equivalencia" : "( 21782 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55025 OU 25266 ) E ( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO COM BANCO DE DADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0403",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52790 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO DE SISTEMAS WEB I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0404",
+		"equivalencia" : "( 52867 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55024 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0405",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROTOCOLO E SERVIÇOS DE INTERNET",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0406",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55028 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESIGN DE SOFTWARE II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0407",
+		"equivalencia" : "2054906 ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROCESSOS DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0408",
+		"equivalencia" : "( 2054913 ) ",
+		"co_requisito" : "( 52683 ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO DE SISTEMAS WEB II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0409",
+		"equivalencia" : "( 52870 ) ",
+		"co_requisito" : "( 52789 ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO CONCORRENTE E DISTRIBUÍDA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0410",
+		"equivalencia" : "( 42163 E 2054957 ) OU ( 52812 E 2054957 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 52787 ) E ( 52663 ) ) OU ( ( 55027 ) E ( 55028 ) E ( 55030 OU 52666 OU 55326 ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTRODUÇÃO À GOVERNANÇA E GESTÃO DE TI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0411",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52685 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTRODUÇÃO AO TESTE DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0412",
+		"equivalencia" : "2054911 ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 52786 ) OU ( ( 55027 ) E ( 55083 OU 52691 ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO PARA AMBIENTE DESKTOP",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0413",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SISTEMA DE INFORMAÇÃO DISTRIBUÍDO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0414",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52795 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GESTÃO DE INFRAESTRUTURA DE TI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0415",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SEGURANÇA DA INFORMAÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0416",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52685 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GESTÃO DE PROJETOS DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0417",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "52684 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "COMPUTAÇÃO EM NUVEM",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0419",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS AVANÇADOS EM GOVERNANÇA DE TI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0420",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52681 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GESTÃO DA MUDANÇA ORGANIZACIONAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0421",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52685 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SISTEMAS DE INTELIGÊNCIA EMPRESARIAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0422",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52685 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESIGN DE SOFTWARE I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0423",
+		"equivalencia" : "( 52691 E 52693 ) OU ( 52680 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROCESSO DE DESENVOLVIMENTO DE SOFTWARE EDUCACIONAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0502",
+		"equivalencia" : "( 2054913 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LEVANTAMENTO E MODELAGEM DE REQUISITOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0503",
+		"equivalencia" : "2054914 ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "RELAÇÕES ENTRE COMUNICAÇÃO, MÍDIA E EDUCAÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0504",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESIGN DA INTERAÇÃO HUMANO-COMPUTADOR",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0505",
+		"equivalencia" : "2054912 ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SISTEMAS COLABORATIVOS DE APOIO À APRENDIZAGEM",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0506",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO PARA DISPOSITIVOS MÓVEIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0509",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ACESSIBILIDADE DIGITAL",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0510",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTELIGÊNCIA ARTIFICIAL APLICADA À EDUCAÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0511",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "AVALIAÇÃO DA INTERAÇÃO HUMANO-COMPUTADOR",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0512",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "EMPREENDEDORISMO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0513",
+		"equivalencia" : "25764 ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA EDUCACIONAL I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0515",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM INFORMÁTICA  EDUCACIONAL II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0516",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS PEDAGÓGICOS PARA A INFORMÁTICA EDUCACIONAL I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0517",
+		"equivalencia" : "( 52689 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS PEDAGÓGICOS PARA A INFORMÁTICA EDUCACIONAL II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0518",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "APRENDIZAGEM BASEADA EM PROJETOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0519",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESIGN INSTRUCIONAL PARA TI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0520",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55056 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS DE JOGOS DIGITAIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0521",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "JOGOS DIGITAIS COMO FERRAMENTA PEDAGÓGICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0522",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TECNOLOGIAS EDUCACIONAIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0523",
+		"equivalencia" : "( 52695 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "EDUCAÇÃO A DISTÂNCIA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0524",
+		"equivalencia" : "( 52696 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "BIOESTATÍSTICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0601",
+		"equivalencia" : "25526 ",
+		"co_requisito" : null,
+		"pre_requisito" : "52664 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FERRAMENTAS PARA ANÁLISE DE SEQUÊNCIAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0602",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "51457 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TECNOLOGIAS EM LARGA ESCALA I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0603",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "51457 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ADMINISTRAÇÃO DE SISTEMAS OPERACIONAIS PARA REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0701",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SERVIÇOS DE REDE E TRANSPORTE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0702",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "SEGURANÇA DE REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0703",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ADMINISTRAÇÃO DE SERVIÇOS DE REDES PARA INTERNET",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0704",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PRINCÍPIOS DE LEGISLAÇÃO APLICÁVEIS À TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO DE DADOS",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0705",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TECNOLOGIAS DE COMUNICAÇÃO DE DADOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0707",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55028 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO EM HARDWARE DE REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0708",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55023 E 55030 E 55028 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO INTEGRADOR DE REDES I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0709",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GERÊNCIA DE REDES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0712",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55028 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO DE PROJETOS DE REDES DE COMPUTADORES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0725",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MECÂNICAS E BALANCEAMENTO DE JOGOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0801",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO DE INOVAÇÃO TECNOLÓGICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0822",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "55027 ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TECNOLOGIA DA INFORMAÇÃO NA SAÚDE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "IMD0920",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "HISTÓRIA E CULTURA AFRO-BRASILEIRA E INDÍGENA",
+		"ch_total" : 100,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "LET0508",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ALGEBRA LINEAR PARA COMPUTAÇÃO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "MAT0309",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 52665 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MATEMATICA PARA ENGENHARIA II",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "MAT0312",
+		"equivalencia" : "( 20027 ) OU ( 23513 ) OU ( 23573 ) OU ( 23536 ) OU ( 23500 E 23501 ) OU ( 23587 ) OU ( 23582 ) OU ( 2051052 ) OU ( 48584 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 25703 OU 25706 OU 25690 ) OU ( 25704 E 23490 ) OU ( 24535 ) OU ( 25691 ) OU ( 52662 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MATEMATICA PARA ENGENHARIA III",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "MAT0314",
+		"equivalencia" : "( 23498 OU 27817 ) OU ( 23537 ) OU ( 23583 ) OU ( 23591 ) OU ( 23552 ) OU ( 2036557 OU 2049800 ) OU ( 23539 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 23538 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PRÁTICAS DE LEITURA E ESCRITA EM PORTUGUÊS I",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0017",
+		"equivalencia" : "( 52657 OU 2051002 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"nome" : "PRÁTICAS DE LEITURA EM INGLÊS",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0018",
+		"equivalencia" : "( 52782 OU 2051708 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"nome" : "RESOLUÇÃO DE PROBLEMAS MATEMÁTICOS PARA TI",
+		"ch_total" : 180,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0019",
+		"equivalencia" : "( 52656 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"nome" : "TECNOLOGIA DA INFORMAÇÃO E SOCIEDADE",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0020",
+		"equivalencia" : "( 52535 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 1
+	},
+	{
+		"nome" : "INTRODUÇÃO ÀS TÉCNICAS DE PROGRAMAÇÃO",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0012",
+		"equivalencia" : "( 2022850 ) OU ( 61131 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"nome" : "CÁLCULO DIFERENCIAL E INTEGRAL I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0024",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"nome" : "PRÁTICAS DE LEITURA E ESCRITA EM PORTUGUÊS II",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0027",
+		"equivalencia" : "( 52784 OU 2051700 OU 57603 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55019 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"nome" : "FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO I",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0028",
+		"equivalencia" : "( 52653 OU 2040665 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"nome" : "VETORES E GEOMETRIA ANALÍTICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0034",
+		"equivalencia" : "( 48581 E 48583 ) OU ( 2051005 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55031 ) ",
+		"semestre_oferta" : 2
+	},
+	{
+		"nome" : "ESTRUTURA DE DADOS BÁSICAS I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0029",
+		"equivalencia" : "( 2022856 ) OU ( 52778 ) ",
+		"co_requisito" : "( 55024 ) ",
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"nome" : "LINGUAGEM DE PROGRAMAÇÃO I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0030",
+		"equivalencia" : "( 2022856 ) OU ( 52785 ) ",
+		"co_requisito" : "( 55023 ) ",
+		"pre_requisito" : "( 52650 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"nome" : "PROBABILIDADE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0033",
+		"equivalencia" : null,
+		"co_requisito" : "( 55025 ) ",
+		"pre_requisito" : "( 52662 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"nome" : "FUNDAMENTOS MATEMÁTICOS DA COMPUTAÇÃO II",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0038",
+		"equivalencia" : "( 2040951 OU 52659 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55022 ) ",
+		"semestre_oferta" : 3
+	},
+	{
+		"nome" : "ESTRUTURAS DE DADOS BÁSICAS II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0039",
+		"equivalencia" : "( 2022900 ) OU ( 52787 ) ",
+		"co_requisito" : "( 55027 ) ",
+		"pre_requisito" : "( 55023 ) ",
+		"semestre_oferta" : 4
+	},
+	{
+		"nome" : "LINGUAGEM DE PROGRAMAÇÃO II",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 1,
+		"codigo" : "IMD0040",
+		"equivalencia" : "( 2022900 ) OU ( 52786 ) ",
+		"co_requisito" : "( 55026 ) ",
+		"pre_requisito" : "( 55024 ) ",
+		"semestre_oferta" : 4
+	},
+	{
+		"nome" : "RESPONSABILIDADE SOCIOAMBIENTAL",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "ADM0065",
+		"equivalencia" : "( 24561 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ANTROPOLOGIA AFRO-BRASILEIRA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DAN0007",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "CULTURA E MEIO AMBIENTE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DAN0012",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DIREITOS HUMANOS, DIVERSIDADE CULTURAL E RELAÇÕES ÉTNICO-RACIAIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DAN0024",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GENETICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DBG0047",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "QUÍMICA GERAL E ORGÂNICA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DBQ0047",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FUNDAMENTOS DE BIOQUÍMICA E BIOLOGIA MOLECULAR",
+		"ch_total" : 90,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DBQ0048",
+		"equivalencia" : null,
+		"co_requisito" : "( ( 62381 ) ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0036",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO I",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0090",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO II",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0091",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO III",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0092",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO IV",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0093",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO V",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0094",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO VI",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0095",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO VII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0096",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO VIII",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0097",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO IX",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0098",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TOPICOS ESPECIAIS EM COMPUTACAO X",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0099",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "FORMACAO HUMANISTICA EM COMPUTACAO",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0340",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "CALCULO NUMERICO PARA CIENCIA DA COMPUTACAO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0404",
+		"equivalencia" : "( 23499 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 23538 OU 23587 ) E ( 25694 ) ) OU ( 23538 E 55325 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TREINAMENTO PARA COMPETICOES DE PROGRAMACAO",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0410",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 2051007 OU 25265 OU 21753 OU 2022850 OU 52090 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LOGICAS NAO-CLASSICAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0415",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 23534 ) OU ( 21775 ) OU ( 25544 ) OU ( 2054905 ) OU ( 52975 ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ESPECIFICACAO E VERIFICACAO DE PROGRAMAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0436",
+		"equivalencia" : "( 20007 ) OU ( 21714 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 21775 ) E ( ( ( 21777 ) E ( 21776 ) ) OU ( 2022856 ) ) ) OU ( 52975 E 55026 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LINGUAGENS DE PROGRAMACAO: CONCEITOS E PARADIGMAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0437",
+		"equivalencia" : "( 21721 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 21780 ) E ( 21778 ) ) OU ( 2022900 ) OU ( 52972 E 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "INTERACAO HUMANO-COMPUTADOR",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0443",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( ( 21675 OU 21779 OU 25257 OU 52971 ) ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "COMPUTAÇÃO GRÁFICA I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0451",
+		"equivalencia" : "( 21772 ) OU ( 23512 ) OU ( 40118 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 23558 ) OU ( 52662 E 55026 E 55325 E 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "BOAS PRÁTICAS DE PROGRAMAÇÃO",
+		"ch_total" : 30,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0501",
+		"equivalencia" : null,
+		"co_requisito" : "( 55027 ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO DISTRIBUÍDA",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0502",
+		"equivalencia" : "( 40135 ) OU ( 55371 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55030 E 55028 ) OU ( 2054977 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LÓGICA APLICADA A ENGENHARIA DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0505",
+		"equivalencia" : "( 21775 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55025 ) OU ( 40106 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROJETO DETALHADO DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0506",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "ARQUITETURA DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0514",
+		"equivalencia" : "( 21792 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 2054910 ) OU ( 21779 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MANUTENÇÃO DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0515",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 2054910 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "MÉTODOS FORMAIS DE ENGENHARIA DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0516",
+		"equivalencia" : "( 21793 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 2054905 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "GERÊNCIA DE CONFIGURAÇÃO E MUDANÇAS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0517",
+		"equivalencia" : null,
+		"co_requisito" : "( 2054913 ) ",
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PLANEJAMENTO E GERENCIAMENTO DE PROJETOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0518",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "LINHAS DE PRODUTO DE SOFTWARE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0522",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO DE SISTEMAS PARA DISPOSITIVOS MÓVEIS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0524",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 55027 OU 2022900 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO EM TIMES",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0529",
+		"equivalencia" : "( 21724 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "DESENVOLVIMENTO DE JOGOS",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0530",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : "( 2022900 ) ",
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE I",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0531",
+		"equivalencia" : null,
+		"co_requisito" : null,
+		"pre_requisito" : null,
+		"semestre_oferta" : 0
+	},
+	{
+		"nome" : "PROGRAMAÇÃO CONCORRENTE",
+		"ch_total" : 60,
+		"tipo_vinculo_componente" : 2,
+		"codigo" : "DIM0612",
+		"equivalencia" : "( 42163 ) ",
+		"co_requisito" : null,
+		"pre_requisito" : "( 55030 E 55027 ) OU ( ( 2054977 OU ( 21771 E 21789 E 21790 ) ) E 2022850 ) ",
+		"semestre_oferta" : 0
+	}
+]
